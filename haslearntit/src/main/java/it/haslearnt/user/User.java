@@ -1,0 +1,59 @@
+/*
+ * Copyright: this code is distributed under WTFPL version2
+ * In short: You just DO WHAT THE FUCK YOU WANT TO.
+ */
+
+package it.haslearnt.user;
+
+import it.haslearnt.cassandra.mapping.*;
+
+@Entity("Users")
+public class User {
+	@Id
+	private String name;
+
+    @Column
+	private String hashedPassword;
+
+    @Column
+    private String email;
+
+	public String email() {
+		return email;
+	}
+
+	public String password() {
+		return hashedPassword;
+	}
+
+    public String name() {
+        return name;
+    }
+
+	public User withEmail(String email) {
+		this.email = email;
+		return this;
+	}
+
+	public User withPassword(String password) {
+		this.hashedPassword = password;
+		return this;
+	}
+
+    public User withName(String name) {
+        this.name = name;
+        return this;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getHashedPassword() {
+        return hashedPassword;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+}
