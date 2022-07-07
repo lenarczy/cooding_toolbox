@@ -17,7 +17,7 @@
 		<spring-security.version>3.0.5.RELEASE</spring-security.version> <!-- 3.1.0.RC3 -->
 		<spring-social.version>1.0.0.RELEASE</spring-social.version>
 		<slf4j.version>1.6.1</slf4j.version>
-		<jetty.version>8.1.0.RC0</jetty.version>
+		<jetty.version>10.0.10</jetty.version>
 		<aspectj.version>1.6.9</aspectj.version>
 	</properties>
 
